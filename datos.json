@@ -1,0 +1,1181 @@
+{
+  "meta": {
+    "title": "Comer para Sanar",
+    "subtitle": "Comida real, rica y reconfortante — suave con tu estómago",
+    "conditions": [
+      "Gastritis crónica",
+      "Esófago de Barrett",
+      "Atrofia gástrica",
+      "H. pylori"
+    ],
+    "brand": "De adentro hacia afuera",
+    "categories": [
+      "desayunos",
+      "almuerzos",
+      "cenas",
+      "snacks"
+    ]
+  },
+  "recipes": [
+    {
+      "category": "desayunos",
+      "title": "Bowl de Yogur Griego con Proteína, Banano y Arándanos",
+      "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800&q=80&auto=format&fit=crop",
+      "rating": "9/10",
+      "rating_fill": 90,
+      "description": "Cremoso, fresco y cargado de proteína. Un bowl que se siente indulgente pero te deja ligero — arándanos, banano y ese toque de canela que lo vuelve adictivo.",
+      "macros": {
+        "protein": 42,
+        "carbs": 38,
+        "fat": 6,
+        "calories": 380
+      },
+      "ingredients": [
+        "250g yogur griego sin azúcar 0%",
+        "1 scoop proteína de guisante o arroz (sin whey)",
+        "1 banano maduro en rodajas",
+        "80g arándanos frescos o congelados",
+        "Canela pizca (antiinflamatoria)"
+      ],
+      "steps": [
+        {
+          "text": "Vierte el yogur griego en un bowl amplio como base.",
+          "timer_seconds": null
+        },
+        {
+          "text": "Mezcla la proteína en polvo con el yogur hasta integrar bien y sin grumos.",
+          "timer_seconds": null
+        },
+        {
+          "text": "Agrega el banano en rodajas y los arándanos encima.",
+          "timer_seconds": null
+        },
+        {
+          "text": "Finaliza con una pizca de canela. Consume de inmediato.",
+          "timer_seconds": null
+        }
+      ],
+      "note": "💡 Usa proteína de guisante o arroz, no whey. El whey puede irritar la mucosa inflamada. Los arándanos congelados son igual de buenos — a veces más concentrados en antioxidantes."
+    },
+    {
+      "category": "desayunos",
+      "title": "Tortilla de Claras con Espinaca, Aguacate y Arroz",
+      "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=800&q=80&auto=format&fit=crop",
+      "rating": "9/10",
+      "rating_fill": 90,
+      "description": "Esponjosa, llena de color y muy saciante. Proteína de verdad, grasas buenas del aguacate y un arroz que la redondea. Desayuno de campeones, sin pesadez.",
+      "macros": {
+        "protein": 35,
+        "carbs": 42,
+        "fat": 14,
+        "calories": 430
+      },
+      "ingredients": [
+        "3 claras de huevo + 1 huevo entero",
+        "Puñado de espinaca fresca",
+        "½ aguacate mediano",
+        "100g arroz blanco cocido",
+        "Aceite de oliva, sal mínima"
+      ],
+      "steps": [
+        {
+          "text": "Bate las claras con el huevo entero. Agrega la espinaca picada.",
+          "timer_seconds": null
+        },
+        {
+          "text": "Calienta aceite de oliva en sartén a fuego medio-bajo. Vierte la mezcla y cocina tapado 3-4 minutos.",
+          "timer_seconds": null
+        },
+        {
+          "text": "Dobla la tortilla y sirve con el arroz y el aguacate al lado.",
+          "timer_seconds": 240
+        }
+      ],
+      "note": "💡 No uses sartén de teflón dañado — libera compuestos que agravan la inflamación. Prefiere sartén de cerámica o acero inoxidable."
+    },
+    {
+      "category": "desayunos",
+      "title": "Avena en Agua con Proteína, Banano y Canela",
+      "image": "https://images.unsplash.com/photo-1517673400267-0251440c45dc?w=800&q=80&auto=format&fit=crop",
+      "rating": "8.7/10",
+      "rating_fill": 87,
+      "description": "Cremosa y reconfortante, con ese aroma a canela que se siente a postre. Energía que dura toda la mañana y proteína para que rinda de verdad.",
+      "macros": {
+        "protein": 32,
+        "carbs": 52,
+        "fat": 5,
+        "calories": 380
+      },
+      "ingredients": [
+        "80g avena en hojuelas",
+        "220ml agua (no leche)",
+        "1 scoop proteína de guisante o arroz",
+        "1 banano maduro en rodajas",
+        "Canela al gusto"
+      ],
+      "steps": [
+        {
+          "text": "Cocina la avena en agua a fuego medio removiendo constantemente hasta cremosa, ~5 minutos.",
+          "timer_seconds": 300
+        },
+        {
+          "text": "Retira del fuego, deja enfriar 2 minutos y mezcla la proteína. Si se mezcla en caliente puede generar grumos.",
+          "timer_seconds": null
+        },
+        {
+          "text": "Agrega el banano y la canela encima. Sirve de inmediato.",
+          "timer_seconds": null
+        }
+      ],
+      "note": "💡 Agua, no leche. La leche puede generar más mucosidad gástrica y empeorar el reflujo. La avena en agua es más suave para la mucosa."
+    },
+    {
+      "category": "desayunos",
+      "title": "Batido de Papaya, Banano, Yogur Griego y Linaza",
+      "image": "https://images.unsplash.com/photo-1502741224143-90386d7f8c82?w=800&q=80&auto=format&fit=crop",
+      "rating": "8.6/10",
+      "rating_fill": 86,
+      "description": "Tropical, cremoso y refrescante. La papaya le da dulzor natural y el yogur lo vuelve sustancioso. Sabe a vacaciones, cae como seda.",
+      "macros": {
+        "protein": 22,
+        "carbs": 48,
+        "fat": 5,
+        "calories": 320
+      },
+      "ingredients": [
+        "150g papaya madura",
+        "1 banano maduro",
+        "120g yogur griego sin azúcar 0%",
+        "150ml leche de avena",
+        "1 cucharada de linaza molida"
+      ],
+      "steps": [
+        {
+          "text": "Licúa todos los ingredientes juntos hasta textura homogénea.",
+          "timer_seconds": null
+        },
+        {
+          "text": "Toma de inmediato. No guardes — la papaya oxida rápido y pierde la papaína activa.",
+          "timer_seconds": null
+        }
+      ],
+      "note": "💡 La linaza molida (no entera) es la que se absorbe. Si la tienes entera, muélela en el momento o compra molida y refrigerada."
+    },
+    {
+      "category": "desayunos",
+      "title": "Arepa de Maíz Blanco con Huevo, Claras y Aguacate",
+      "image": "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=800&q=80&auto=format&fit=crop",
+      "rating": "8.5/10",
+      "rating_fill": 85,
+      "description": "El clásico de siempre, pero bien armado. Crujiente por fuera, suave por dentro, con aguacate cremoso. Comfort food que cae perfecto.",
+      "macros": {
+        "protein": 28,
+        "carbs": 35,
+        "fat": 16,
+        "calories": 390
+      },
+      "ingredients": [
+        "1 arepa de maíz blanco mediana",
+        "1 huevo entero + 2 claras",
+        "½ aguacate maduro",
+        "Aceite de oliva, sal mínima"
+      ],
+      "steps": [
+        {
+          "text": "Calienta la arepa en sartén o plancha sin aceite hasta dorada por ambos lados.",
+          "timer_seconds": null
+        },
+        {
+          "text": "Revuelve el huevo con las claras en sartén con gotitas de aceite de oliva a fuego medio-bajo.",
+          "timer_seconds": null
+        },
+        {
+          "text": "Sirve con el aguacate en rodajas al lado. No mezcles el aguacate caliente — mejor frío para preservar sus grasas.",
+          "timer_seconds": null
+        }
+      ],
+      "note": "💡 Evita la mantequilla. El aceite de oliva tiene efecto antiinflamatorio real; la mantequilla suma grasa saturada sin beneficio para la mucosa."
+    },
+    {
+      "category": "almuerzos",
+      "title": "Pechuga al Vapor con Arroz, Zanahoria y Papa Cocida",
+      "image": "https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=800&q=80&auto=format&fit=crop",
+      "rating": "9/10",
+      "rating_fill": 90,
+      "description": "Simple, honesto y satisfactorio. La comida que siempre funciona: proteína magra, carbos limpios y verduras dulces. Fácil de hacer, difícil de aburrir.",
+      "macros": {
+        "protein": 48,
+        "carbs": 65,
+        "fat": 6,
+        "calories": 510
+      },
+      "ingredients": [
+        "180-200g pechuga de pollo",
+        "150g arroz blanco cocido",
+        "1 zanahoria mediana",
+        "1 papa mediana",
+        "Sal, laurel, perejil (para el vapor)"
+      ],
+      "steps": [
+        {
+          "text": "Coloca la pechuga en vaporera con laurel y perejil. Cocina al vapor 18-20 minutos.",
+          "timer_seconds": 1200
+        },
+        {
+          "text": "Cocina la zanahoria y la papa en agua con sal hasta blandas, ~15 minutos.",
+          "timer_seconds": null
+        },
+        {
+          "text": "Sirve todo junto. Puedes agregar un hilo de aceite de oliva crudo por encima al final.",
+          "timer_seconds": null
+        }
+      ],
+      "note": "💡 El vapor conserva más nutrientes que hervir y no añade grasa. Si no tienes vaporera, usa un colador metálico sobre una olla con agua hirviendo tapada."
+    },
+    {
+      "category": "almuerzos",
+      "title": "Pechuga al Horno con Quinoa y Verduras al Vapor",
+      "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80&auto=format&fit=crop",
+      "rating": "8.7/10",
+      "rating_fill": 87,
+      "description": "Un plato completo y vibrante. La quinoa le da textura y un plus de proteína; las verduras, color y frescura. Se ve tan bien como sabe.",
+      "macros": {
+        "protein": 55,
+        "carbs": 55,
+        "fat": 9,
+        "calories": 520
+      },
+      "ingredients": [
+        "180g pechuga de pollo",
+        "100g quinoa cruda (rinde ~250g cocida)",
+        "1 calabacín mediano",
+        "1 zanahoria",
+        "Aceite de oliva, orégano, sal"
+      ],
+      "steps": [
+        {
+          "text": "Enjuaga bien la quinoa. Cocina con doble de agua a fuego bajo 15 minutos tapada.",
+          "timer_seconds": 900
+        },
+        {
+          "text": "Lleva la pechuga al horno a 180°C con aceite de oliva y orégano, 22-25 minutos.",
+          "timer_seconds": 1380
+        },
+        {
+          "text": "Cocina las verduras al vapor 10 minutos. Sirve todo junto.",
+          "timer_seconds": null
+        }
+      ],
+      "note": "💡 Lava la quinoa siempre antes de cocinar — la saponina (su capa natural) puede irritar la mucosa si no se enjuaga."
+    },
+    {
+      "category": "almuerzos",
+      "title": "Salmón al Horno con Papa y Espárragos al Vapor",
+      "image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=800&q=80&auto=format&fit=crop",
+      "rating": "8.6/10",
+      "rating_fill": 86,
+      "description": "Jugoso, con omega-3 y un punto perfecto al horno. Espárragos crujientes y papa cremosa. Un plato que parece de restaurante y se hace en casa.",
+      "macros": {
+        "protein": 44,
+        "carbs": 38,
+        "fat": 18,
+        "calories": 490
+      },
+      "ingredients": [
+        "180g filete de salmón fresco",
+        "1 papa mediana",
+        "8-10 espárragos",
+        "Aceite de oliva, limón (muy poco, solo aroma), hierbas"
+      ],
+      "steps": [
+        {
+          "text": "Precalienta horno a 180°C. Coloca el salmón en papel aluminio con aceite de oliva y hierbas. Cierra el papel y hornea 18 minutos.",
+          "timer_seconds": 1080
+        },
+        {
+          "text": "Cocina la papa y los espárragos al vapor mientras tanto.",
+          "timer_seconds": null
+        },
+        {
+          "text": "Sirve. El limón úsalo con cuidado — una rodaja de aroma, no el jugo completo.",
+          "timer_seconds": null
+        }
+      ],
+      "note": "💡 El papel aluminio (en papillote) conserva todos los jugos y nutrientes sin necesitar más grasa. El salmón queda jugoso sin resecarse."
+    },
+    {
+      "category": "almuerzos",
+      "title": "Filete de Pescado Blanco al Horno con Puré y Brócoli",
+      "image": "https://images.unsplash.com/photo-1485921325833-c519f76c4927?w=800&q=80&auto=format&fit=crop",
+      "rating": "8.5/10",
+      "rating_fill": 85,
+      "description": "Pescado tierno sobre un puré sedoso, con brócoli al dente. Reconfortante y elegante a la vez. El brócoli además suma un compuesto que cuida tu digestión.",
+      "macros": {
+        "protein": 40,
+        "carbs": 45,
+        "fat": 8,
+        "calories": 410
+      },
+      "ingredients": [
+        "180g tilapia o corvina",
+        "2 papas medianas",
+        "100g brócoli en floretes",
+        "Aceite de oliva, orégano, sal",
+        "Leche de avena (para el puré)"
+      ],
+      "steps": [
+        {
+          "text": "Hornea el pescado a 180°C con aceite y orégano, 16-18 minutos.",
+          "timer_seconds": 1020
+        },
+        {
+          "text": "Hierve las papas, escurre y aplasta con un chorro de leche de avena y aceite de oliva hasta textura suave.",
+          "timer_seconds": null
+        },
+        {
+          "text": "Cocina el brócoli al vapor 7 minutos — no más, para conservar el sulforafano activo.",
+          "timer_seconds": null
+        }
+      ],
+      "note": "💡 No sobrecocines el brócoli. La enzima que activa el sulforafano (mirosinasa) se destruye con el calor excesivo. 7 minutos al vapor es el punto óptimo."
+    },
+    {
+      "category": "almuerzos",
+      "title": "Atún en Agua con Arroz, Papa y Zanahoria Cocida",
+      "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80&auto=format&fit=crop",
+      "rating": "8.5/10",
+      "rating_fill": 85,
+      "description": "La opción rápida que no sacrifica sabor ni proteína. Fresca, práctica y lista en minutos. Perfecta para el día que no quieres complicarte.",
+      "macros": {
+        "protein": 42,
+        "carbs": 60,
+        "fat": 4,
+        "calories": 445
+      },
+      "ingredients": [
+        "2 latas de atún en agua (escurrido)",
+        "150g arroz blanco cocido",
+        "1 papa mediana cocida",
+        "1 zanahoria cocida",
+        "Aceite de oliva, perejil, sal mínima"
+      ],
+      "steps": [
+        {
+          "text": "Escurre bien el atún — en agua, no en aceite.",
+          "timer_seconds": null
+        },
+        {
+          "text": "Sirve el arroz caliente con la papa y zanahoria cocidas.",
+          "timer_seconds": null
+        },
+        {
+          "text": "Coloca el atún encima, hilo de aceite de oliva y perejil fresco. No lo cocines — el atún en lata ya está cocido y el calor excesivo lo reseca.",
+          "timer_seconds": null
+        }
+      ],
+      "note": "💡 Elige atún en agua con poco sodio. Algunas marcas tienen hasta 400mg de sodio por lata — eso irrita la mucosa y sube tensión. Revisa etiqueta."
+    },
+    {
+      "category": "cenas",
+      "title": "Pollo Desmenuzado con Arroz y Calabacín al Vapor",
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80&auto=format&fit=crop",
+      "rating": "9/10",
+      "rating_fill": 90,
+      "description": "Ligera pero sabrosa, ideal para cerrar el día sin pesadez. Pollo jugoso, arroz suelto y calabacín tierno. Cena reconfortante de verdad.",
+      "macros": {
+        "protein": 40,
+        "carbs": 45,
+        "fat": 5,
+        "calories": 385
+      },
+      "ingredients": [
+        "160g pechuga de pollo cocida y desmenuzada",
+        "130g arroz blanco cocido",
+        "1 calabacín mediano",
+        "Aceite de oliva, perejil, sal"
+      ],
+      "steps": [
+        {
+          "text": "Cocina la pechuga hervida con sal y perejil. Desmenúzala con dos tenedores.",
+          "timer_seconds": null
+        },
+        {
+          "text": "Cocina el calabacín al vapor 8 minutos — debe quedar tierno pero no deshecho.",
+          "timer_seconds": 480
+        },
+        {
+          "text": "Sirve el arroz, coloca el pollo encima y el calabacín al lado. Finaliza con aceite de oliva crudo.",
+          "timer_seconds": null
+        }
+      ],
+      "note": "💡 Puedes preparar la pechuga desmenuzada en batch el domingo para usarla toda la semana. Refrigerada dura 4 días perfectamente."
+    },
+    {
+      "category": "cenas",
+      "title": "Tilapia al Vapor con Puré de Papa y Zanahoria",
+      "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=800&q=80&auto=format&fit=crop",
+      "rating": "9/10",
+      "rating_fill": 90,
+      "description": "Pescado delicado sobre un puré aterciopelado. Sencilla, suave y muy reconfortante — el tipo de cena que te deja en paz para dormir bien.",
+      "macros": {
+        "protein": 36,
+        "carbs": 42,
+        "fat": 6,
+        "calories": 365
+      },
+      "ingredients": [
+        "160g tilapia fresca",
+        "1 papa grande + 1 zanahoria mediana",
+        "Leche de avena (para el puré)",
+        "Aceite de oliva, laurel, sal"
+      ],
+      "steps": [
+        {
+          "text": "Cocina la tilapia al vapor con laurel, 12-14 minutos.",
+          "timer_seconds": 780
+        },
+        {
+          "text": "Hierve papa y zanahoria juntas hasta muy blandas. Aplasta con leche de avena tibia y un hilo de aceite de oliva.",
+          "timer_seconds": null
+        },
+        {
+          "text": "Sirve con el puré y acompaña con agua de melisa tibia (no caliente).",
+          "timer_seconds": null
+        }
+      ],
+      "note": "💡 La zanahoria en el puré suma betacaroteno, que la mucosa gástrica convierte en vitamina A — esencial para regenerar el epitelio dañado."
+    },
+    {
+      "category": "cenas",
+      "title": "Claras de Huevo Revueltas con Puré de Papa y Espinaca",
+      "image": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=800&q=80&auto=format&fit=crop",
+      "rating": "8.7/10",
+      "rating_fill": 87,
+      "description": "Cremosas y esponjosas, con espinaca y un puré que abraza. Alta en proteína, ligera de verdad, perfecta para una cena sin culpa.",
+      "macros": {
+        "protein": 32,
+        "carbs": 38,
+        "fat": 5,
+        "calories": 325
+      },
+      "ingredients": [
+        "4-5 claras de huevo",
+        "2 papas medianas para el puré",
+        "Puñado de espinaca fresca",
+        "Aceite de oliva, sal mínima"
+      ],
+      "steps": [
+        {
+          "text": "Cocina las papas, haz el puré con un hilo de aceite de oliva y sal.",
+          "timer_seconds": null
+        },
+        {
+          "text": "En sartén con mínimo aceite a fuego bajo, agrega la espinaca hasta marchitar (1 minuto), luego vierte las claras y revuelve despacio hasta cuajar.",
+          "timer_seconds": null
+        },
+        {
+          "text": "Sirve las claras sobre el puré. Come despacio — la digestión empieza en la boca.",
+          "timer_seconds": null
+        }
+      ],
+      "note": "💡 Fuego bajo siempre para las claras. A fuego alto se vuelven gomosas y más difíciles de digerir. Paciencia = mejor textura y mejor digestión."
+    },
+    {
+      "category": "cenas",
+      "title": "Crema de Ahuyama con Pollo Desmenuzado y Tostada",
+      "image": "https://images.unsplash.com/photo-1547592180-85f173990554?w=800&q=80&auto=format&fit=crop",
+      "rating": "8.6/10",
+      "rating_fill": 86,
+      "description": "Aterciopelada, dulce y reconfortante, con pollo que la vuelve una comida completa. La tostada para mojar es obligatoria. Pura comfort food sana.",
+      "macros": {
+        "protein": 36,
+        "carbs": 40,
+        "fat": 7,
+        "calories": 370
+      },
+      "ingredients": [
+        "300g ahuyama pelada en cubos",
+        "140g pechuga desmenuzada cocida",
+        "200ml caldo de hueso (o agua)",
+        "1 tostada integral",
+        "Aceite de oliva, sal, cúrcuma pizca"
+      ],
+      "steps": [
+        {
+          "text": "Hierve la ahuyama en el caldo hasta muy blanda, ~15 minutos.",
+          "timer_seconds": 900
+        },
+        {
+          "text": "Licúa con aceite de oliva y cúrcuma. No añadas crema de leche ni mantequilla.",
+          "timer_seconds": null
+        },
+        {
+          "text": "Sirve la crema caliente con el pollo desmenuzado encima y la tostada al lado.",
+          "timer_seconds": null
+        }
+      ],
+      "note": "💡 Si usas caldo de hueso en lugar de agua, la crema gana colágeno y gelatina que reparan la mucosa mientras comes. Doble beneficio."
+    },
+    {
+      "category": "cenas",
+      "title": "Pescado Blanco al Vapor con Papa y Agua de Melisa",
+      "image": "https://images.unsplash.com/photo-1559847844-5315695dadae?w=800&q=80&auto=format&fit=crop",
+      "rating": "8.5/10",
+      "rating_fill": 85,
+      "description": "Delicada y limpia, acompañada de una infusión que relaja. La cena ligera perfecta para esas noches en que quieres comer rico sin sentirte lleno.",
+      "macros": {
+        "protein": 34,
+        "carbs": 35,
+        "fat": 5,
+        "calories": 320
+      },
+      "ingredients": [
+        "160g tilapia o corvina",
+        "1 papa mediana",
+        "Laurel, perejil, sal",
+        "Para la melisa: hojas secas o frescas, agua caliente"
+      ],
+      "steps": [
+        {
+          "text": "Cocina el pescado al vapor con laurel, 12 minutos.",
+          "timer_seconds": 720
+        },
+        {
+          "text": "Cocina la papa en agua con sal hasta blanda.",
+          "timer_seconds": null
+        },
+        {
+          "text": "Prepara la infusión de melisa: 1 cucharada de hojas en agua caliente (no hirviendo), tapa 8 minutos, cuela y toma tibia después de cenar.",
+          "timer_seconds": 480
+        }
+      ],
+      "note": "💡 El agua de melisa nunca caliente — el líquido muy caliente irrita directamente el esófago de Barrett. Tibia siempre."
+    },
+    {
+      "category": "snacks",
+      "title": "Yogur Griego con Arándanos y Linaza",
+      "image": "https://images.unsplash.com/photo-1550304943-4f24f54ddde9?w=800&q=80&auto=format&fit=crop",
+      "rating": "8.7/10",
+      "rating_fill": 87,
+      "description": "Cremoso, fresco y antojable. Probióticos, proteína y arándanos en un snack que se siente premio. El que siempre quieres tener a mano.",
+      "macros": {
+        "protein": 20,
+        "carbs": 18,
+        "fat": 2,
+        "calories": 170
+      },
+      "ingredients": [
+        "150-200g yogur griego sin azúcar 0%",
+        "60g arándanos frescos o congelados",
+        "1 cucharada de linaza molida"
+      ],
+      "steps": [],
+      "note": "💡 Un snack saciante para media mañana o media tarde. Si haces ejercicio, tomarlo 30-60 minutos después ayuda a la recuperación; los probióticos del yogur trabajan en paralelo por la salud digestiva."
+    },
+    {
+      "category": "snacks",
+      "title": "Banano Maduro",
+      "image": "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=800&q=80&auto=format&fit=crop",
+      "rating": "8.5/10",
+      "rating_fill": 85,
+      "description": "El snack más honesto que existe. Dulce natural, cero complicación y energía al instante. A veces lo simple es lo mejor.",
+      "macros": {
+        "protein": 1,
+        "carbs": 27,
+        "fat": 0,
+        "calories": 105
+      },
+      "ingredients": [],
+      "steps": [],
+      "note": "💡 Si entrenas, tomarlo 20-30 minutos antes da energía rápida. Entre más maduro, más fácil de digerir. Evita los bananos verdes, que pueden generar gases."
+    },
+    {
+      "category": "snacks",
+      "title": "Claras de Huevo Cocidas con Pera sin Cáscara",
+      "image": "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=800&q=80&auto=format&fit=crop",
+      "rating": "8.6/10",
+      "rating_fill": 86,
+      "description": "Proteína y dulzor de fruta en un snack que sí llena. Fresco, limpio y perfecto para media tarde cuando llega el bajón.",
+      "macros": {
+        "protein": 14,
+        "carbs": 15,
+        "fat": 0,
+        "calories": 120
+      },
+      "ingredients": [
+        "3-4 claras de huevo cocidas",
+        "½ pera madura sin cáscara"
+      ],
+      "steps": [
+        {
+          "text": "Hierve los huevos enteros 10 minutos, enfría en agua fría y pela.",
+          "timer_seconds": 600
+        },
+        {
+          "text": "Descarta la yema, come solo las claras con la pera sin cáscara al lado.",
+          "timer_seconds": null
+        }
+      ],
+      "note": "💡 Puedes hervir 6-8 huevos el domingo y tener claras listas toda la semana en la nevera. Sin cáscara duran 5 días refrigeradas."
+    },
+    {
+      "category": "snacks",
+      "title": "Pera o Manzana sin Cáscara",
+      "image": "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=800&q=80&auto=format&fit=crop",
+      "rating": "8.5/10",
+      "rating_fill": 85,
+      "description": "Dulce, jugosa y refrescante. El snack más fácil del mundo, suave y antiinflamatorio. Frescura pura entre comidas.",
+      "macros": {
+        "protein": 0,
+        "carbs": 20,
+        "fat": 0,
+        "calories": 80
+      },
+      "ingredients": [],
+      "steps": [],
+      "note": "💡 Sin cáscara siempre — la cáscara tiene fibra insoluble que con gastritis activa puede irritar la mucosa. La fruta pelada se digiere mucho más suave. Mastica despacio."
+    },
+    {
+      "category": "snacks",
+      "title": "Batido de Proteína con Leche de Avena y Banano",
+      "image": "https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=800&q=80&auto=format&fit=crop",
+      "rating": "8.5/10",
+      "rating_fill": 85,
+      "description": "Cremoso, dulce y listo en un minuto. El rescate perfecto cuando tienes hambre y prisa. Sabe a malteada, rinde como comida.",
+      "macros": {
+        "protein": 28,
+        "carbs": 35,
+        "fat": 4,
+        "calories": 285
+      },
+      "ingredients": [
+        "1 scoop proteína de guisante o arroz",
+        "250ml leche de avena sin azúcar",
+        "1 banano maduro"
+      ],
+      "steps": [],
+      "note": "💡 Una opción práctica cuando no hay tiempo de comer sólido. Si haces ejercicio, va bien después de entrenar. No reemplaza una comida principal: es un puente hasta la siguiente."
+    },
+    {
+      "category": "desayunos",
+      "title": "Pancakes de Avena y Banano con Yogur Griego",
+      "image": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800&q=80&auto=format&fit=crop",
+      "rating": "9/10",
+      "rating_fill": 90,
+      "description": "Esponjosos, dorados y dulces sin azúcar añadida. Saben a antojo de domingo pero son pura avena, banano y proteína. El desayuno que no parece sano.",
+      "macros": {
+        "protein": 28,
+        "carbs": 52,
+        "fat": 7,
+        "calories": 400
+      },
+      "ingredients": [
+        "1 banano maduro",
+        "2 huevos (o 1 huevo + 2 claras)",
+        "60g avena en hojuelas",
+        "1 scoop proteína de vainilla (guisante o arroz)",
+        "Canela y pizca de polvo de hornear",
+        "Para servir: yogur griego y arándanos"
+      ],
+      "steps": [
+        {
+          "text": "Licúa el banano, los huevos, la avena, la proteína, la canela y el polvo de hornear hasta una mezcla suave.",
+          "timer_seconds": null
+        },
+        {
+          "text": "Calienta una sartén antiadherente a fuego medio-bajo con gotas de aceite. Vierte porciones pequeñas y cocina 2-3 minutos por lado hasta dorar.",
+          "timer_seconds": 180
+        },
+        {
+          "text": "Sirve en torre con yogur griego encima y arándanos. Un hilo de miel opcional.",
+          "timer_seconds": null
+        }
+      ],
+      "note": "💡 Fuego medio-bajo es la clave para que queden esponjosos y no se quemen. Salen unos 4-5 pancakes pequeños."
+    },
+    {
+      "category": "snacks",
+      "title": "Mousse de Cacao y Aguacate",
+      "image": "https://images.unsplash.com/photo-1541599468348-e96984315921?w=800&q=80&auto=format&fit=crop",
+      "rating": "8.7/10",
+      "rating_fill": 87,
+      "description": "Denso, cremoso y chocolatoso — sabe a postre de restaurante. El aguacate lo vuelve sedoso y el cacao puro le da el golpe de chocolate. Nadie adivina que es sano.",
+      "macros": {
+        "protein": 6,
+        "carbs": 22,
+        "fat": 14,
+        "calories": 230
+      },
+      "ingredients": [
+        "1 aguacate maduro",
+        "1 banano maduro",
+        "2 cucharadas de cacao puro en polvo (no chocolate con azúcar)",
+        "1 cucharada de miel o al gusto",
+        "Splash de leche de avena",
+        "Pizca de canela"
+      ],
+      "steps": [
+        {
+          "text": "Licúa todos los ingredientes hasta una crema completamente lisa, raspando los bordes.",
+          "timer_seconds": null
+        },
+        {
+          "text": "Refrigera al menos 30 minutos para que tome cuerpo de mousse.",
+          "timer_seconds": 1800
+        },
+        {
+          "text": "Sirve frío. Opcional: unas rodajas de banano o arándanos encima.",
+          "timer_seconds": null
+        }
+      ],
+      "note": "💡 El cacao puro (no cocoa azucarada) es antioxidante y suave. Si te cae bien el cacao, este postre es un lujo sano; si notas acidez, reduce la cantidad."
+    },
+    {
+      "category": "snacks",
+      "title": "Helado Cremoso de Banano (Nice Cream)",
+      "image": "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=800&q=80&auto=format&fit=crop",
+      "rating": "9/10",
+      "rating_fill": 90,
+      "description": "Helado de verdad hecho solo con banano congelado. Cremoso, dulce y reconfortante, sin lácteos ni azúcar añadida. El postre que puedes comer sin pensarlo dos veces.",
+      "macros": {
+        "protein": 3,
+        "carbs": 34,
+        "fat": 1,
+        "calories": 150
+      },
+      "ingredients": [
+        "2 bananos maduros, en rodajas y congelados",
+        "Splash de leche de avena (solo si hace falta)",
+        "Opcional: pizca de canela o cucharadita de cacao puro"
+      ],
+      "steps": [
+        {
+          "text": "Congela las rodajas de banano al menos 3 horas (mejor de un día para otro).",
+          "timer_seconds": null
+        },
+        {
+          "text": "Licúa el banano congelado, raspando los bordes, hasta lograr textura de helado cremoso. Agrega leche de avena solo si se atasca.",
+          "timer_seconds": null
+        },
+        {
+          "text": "Sirve de inmediato para textura suave, o congela 1 hora más para que quede firme.",
+          "timer_seconds": null
+        }
+      ],
+      "note": "💡 El secreto es usar bananos bien maduros y un buen procesador o licuadora potente. Entre más maduro el banano, más dulce el helado sin agregar nada."
+    },
+    {
+      "category": "almuerzos",
+      "title": "Bowl Mediterráneo de Pollo, Quinoa y Hummus Suave",
+      "image": "https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=800&q=80&auto=format&fit=crop",
+      "rating": "8.8/10",
+      "rating_fill": 88,
+      "description": "Colorido, fresco y lleno de texturas. Pollo dorado, quinoa esponjosa, hummus cremoso y verduras suaves. Un bowl que entra primero por los ojos y cumple en sabor.",
+      "macros": {
+        "protein": 46,
+        "carbs": 48,
+        "fat": 14,
+        "calories": 520
+      },
+      "ingredients": [
+        "180g pechuga de pollo en cubos",
+        "100g quinoa cocida (bien lavada)",
+        "2 cucharadas de hummus suave (sin ajo crudo fuerte ni picante)",
+        "½ pepino sin semillas",
+        "Zanahoria rallada y espinaca tierna",
+        "Aceite de oliva y un toque de limón suave"
+      ],
+      "steps": [
+        {
+          "text": "Saltea el pollo en cubos con aceite de oliva, sal y orégano hasta dorar, 8-10 minutos.",
+          "timer_seconds": 540
+        },
+        {
+          "text": "Arma el bowl: base de quinoa, encima el pollo, y alrededor el pepino, la zanahoria y la espinaca.",
+          "timer_seconds": null
+        },
+        {
+          "text": "Corona con una cucharada generosa de hummus y un hilo de aceite de oliva. Limón muy suave opcional.",
+          "timer_seconds": null
+        }
+      ],
+      "note": "💡 Pide o haz el hummus suave: poco ajo (mejor asado) y sin picante. Así conservas la cremosidad sin irritar."
+    },
+    {
+      "category": "almuerzos",
+      "title": "Bowl de Camarones Salteados con Arroz y Aguacate",
+      "image": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=800&q=80&auto=format&fit=crop",
+      "rating": "8.8/10",
+      "rating_fill": 88,
+      "description": "Camarones jugosos al sartén sobre arroz tibio, con aguacate cremoso y un toque de cilantro fresco. Ligero, proteico y lleno de sabor — un bowl que se siente de restaurante de playa.",
+      "macros": {
+        "protein": 42,
+        "carbs": 50,
+        "fat": 14,
+        "calories": 510
+      },
+      "ingredients": [
+        "200g camarones limpios y pelados",
+        "150g arroz blanco cocido",
+        "½ aguacate en láminas",
+        "Zanahoria rallada y pepino sin semillas",
+        "Aceite de oliva, sal, un toque de cilantro",
+        "Toque de jengibre fresco rallado (opcional, suave)"
+      ],
+      "steps": [
+        {
+          "text": "Seca bien los camarones. Saltéalos en aceite de oliva a fuego medio-alto con una pizca de sal hasta que se tornen rosados, 3-4 minutos. No los pases o se ponen duros.",
+          "timer_seconds": 240
+        },
+        {
+          "text": "Arma el bowl: base de arroz tibio, los camarones encima, y alrededor el aguacate, la zanahoria y el pepino.",
+          "timer_seconds": null
+        },
+        {
+          "text": "Termina con cilantro fresco y un hilo de aceite de oliva. Sirve de inmediato.",
+          "timer_seconds": null
+        }
+      ],
+      "note": "💡 Los camarones son proteína magra y rápida de cocinar. Evita el limón fuerte o el picante encima; el jengibre rallado da frescura sin irritar."
+    },
+    {
+      "category": "almuerzos",
+      "title": "Lomo de Res a la Plancha con Puré y Espárragos",
+      "image": "https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=800&q=80&auto=format&fit=crop",
+      "rating": "8.6/10",
+      "rating_fill": 86,
+      "description": "Un lomo jugoso, sellado por fuera y rosado por dentro, sobre puré sedoso y espárragos al dente. El plato que se siente un premio — proteína de verdad, sin nada que pese.",
+      "macros": {
+        "protein": 50,
+        "carbs": 38,
+        "fat": 18,
+        "calories": 540
+      },
+      "ingredients": [
+        "200g lomo de res (corte magro)",
+        "2 papas medianas para el puré",
+        "8 espárragos",
+        "Splash de leche de avena (para el puré)",
+        "Aceite de oliva, sal, romero o tomillo"
+      ],
+      "steps": [
+        {
+          "text": "Saca el lomo del frío 20 minutos antes. Sálalo y sella en sartén caliente con aceite de oliva, 3 minutos por lado para término medio. Deja reposar 5 minutos antes de cortar.",
+          "timer_seconds": 360
+        },
+        {
+          "text": "Hierve las papas hasta blandas, aplástalas con leche de avena y un hilo de aceite de oliva hasta un puré sedoso.",
+          "timer_seconds": null
+        },
+        {
+          "text": "Cocina los espárragos al vapor 6-7 minutos, que queden al dente.",
+          "timer_seconds": 420
+        },
+        {
+          "text": "Sirve el lomo en láminas sobre el puré, con los espárragos al lado. Hierba fresca encima.",
+          "timer_seconds": null
+        }
+      ],
+      "note": "💡 Elige un corte magro (lomo fino, punta de anca) y cocínalo a la plancha, nunca al carbón ni muy quemado. El reposo deja la carne jugosa y más fácil de digerir."
+    },
+    {
+      "category": "cenas",
+      "title": "Tacos Suaves de Pollo en Tortilla de Maíz",
+      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80&auto=format&fit=crop",
+      "rating": "8.5/10",
+      "rating_fill": 85,
+      "description": "Sí, tacos — y sin sufrir después. Tortilla de maíz tibia (no frita), pollo jugoso, aguacate y un toque de cilantro. Todo el espíritu del taco, sin picante, sin acidez, sin grasa que pese.",
+      "macros": {
+        "protein": 38,
+        "carbs": 42,
+        "fat": 15,
+        "calories": 460
+      },
+      "ingredients": [
+        "3 tortillas de maíz (calentadas, no fritas)",
+        "180g pechuga de pollo en tiras",
+        "½ aguacate",
+        "Zanahoria y calabacín rallados (en vez de repollo crudo)",
+        "Cilantro fresco, aceite de oliva, pizca de comino y orégano",
+        "Crema suave de yogur griego (opcional, para untar)"
+      ],
+      "steps": [
+        {
+          "text": "Saltea el pollo en tiras con aceite de oliva, comino y orégano hasta dorar, 7-8 minutos. Nada de picante.",
+          "timer_seconds": 480
+        },
+        {
+          "text": "Calienta las tortillas de maíz en sartén seca o comal, solo hasta que estén flexibles y tibias. No las frías.",
+          "timer_seconds": null
+        },
+        {
+          "text": "Rellena con el pollo, el aguacate y las verduras ralladas. Un toque de cilantro y, si quieres, una cucharada de yogur griego en vez de crema.",
+          "timer_seconds": null
+        }
+      ],
+      "note": "💡 Las claves para tacos amables: tortilla de maíz tibia (no frita), nada de picante ni salsa ácida, cebolla cocida en vez de cruda, y yogur griego en lugar de crema. Mismo gusto, cero ardor."
+    },
+    {
+      "category": "almuerzos",
+      "title": "Pizza de Base de Pollo con Mozzarella y Albahaca",
+      "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&q=80&auto=format&fit=crop",
+      "rating": "8.7/10",
+      "rating_fill": 87,
+      "description": "La pizza que sí puedes comer: la base es pollo, así que es proteína pura disfrazada de antojo. Salsa de tomate suave, mozzarella derretida y albahaca fresca. Crujiente, sabrosa y sin nada que te caiga mal.",
+      "macros": {
+        "protein": 52,
+        "carbs": 14,
+        "fat": 18,
+        "calories": 430
+      },
+      "ingredients": [
+        "220g pollo molido magro",
+        "1 clara de huevo (para ligar la base)",
+        "Orégano, sal",
+        "4 cucharadas de salsa de tomate casera suave (cocida, sin picante ni ácido fuerte)",
+        "70g mozzarella baja en grasa",
+        "Albahaca fresca y un hilo de aceite de oliva para terminar"
+      ],
+      "steps": [
+        {
+          "text": "Mezcla el pollo molido con la clara, orégano y sal. Extiende sobre papel horno en una base delgada y pareja.",
+          "timer_seconds": null
+        },
+        {
+          "text": "Hornea la base sola a 200°C por 12-14 minutos hasta que esté firme y dorada en los bordes.",
+          "timer_seconds": 780
+        },
+        {
+          "text": "Cubre con la salsa de tomate suave y la mozzarella. Vuelve al horno 7-8 minutos hasta gratinar.",
+          "timer_seconds": 450
+        },
+        {
+          "text": "Termina con albahaca fresca y un hilo de aceite de oliva. Deja reposar 2 minutos y corta.",
+          "timer_seconds": null
+        }
+      ],
+      "note": "💡 La salsa de tomate cocida pierde acidez (el cocinado largo la suaviza). Evita salsas comerciales con mucho ácido. La base de pollo aguanta cualquier topping suave que se te ocurra."
+    }
+  ],
+  "supplements": [
+    {
+      "icon": "🦠",
+      "name": "Probióticos (Lactobacillus reuteri + rhamnosus)",
+      "rating": "9/10",
+      "rating_fill": 90,
+      "description": "Evidencia directa contra H. pylori. Mejoran la eficacia del tratamiento antibiótico y reducen sus efectos secundarios. Esenciales durante y después de la erradicación.",
+      "tags": [
+        "Con el desayuno",
+        "Mín. 10 billones UFC",
+        "Mínimo 3 meses"
+      ]
+    },
+    {
+      "icon": "🌿",
+      "name": "Zinc Carnosina",
+      "rating": "9/10",
+      "rating_fill": 90,
+      "description": "Uno de los suplementos más específicos para la salud gástrica. Ayuda a reparar la mucosa, protege el revestimiento del estómago y se ha estudiado ampliamente para gastritis y úlceras.",
+      "tags": [
+        "75mg dos veces al día",
+        "Con las comidas",
+        "Consulta médico"
+      ]
+    },
+    {
+      "icon": "🐟",
+      "name": "Omega-3 (EPA + DHA)",
+      "rating": "8.7/10",
+      "rating_fill": 87,
+      "description": "Antiinflamatorio sistémico. Reduce la inflamación de la mucosa gástrica y esofágica. Útil si no comes salmón 2x/semana regularmente.",
+      "tags": [
+        "1-2g EPA+DHA/día",
+        "Con el almuerzo",
+        "Forma triglicérido"
+      ]
+    },
+    {
+      "icon": "🌱",
+      "name": "Vitamina D3 + K2",
+      "rating": "8.5/10",
+      "rating_fill": 85,
+      "description": "La deficiencia de vitamina D se asocia con mayor severidad de gastritis y mayor riesgo de progresión del Barrett. La K2 asegura la absorción correcta.",
+      "tags": [
+        "2000-4000 UI D3",
+        "100mcg K2",
+        "Con grasa (almuerzo)"
+      ]
+    },
+    {
+      "icon": "💪",
+      "name": "Proteína de Guisante o Arroz",
+      "rating": "9/10",
+      "rating_fill": 90,
+      "description": "Una alternativa al whey para quienes tienen la mucosa sensible. Perfil de aminoácidos completo, sin lactosa y sin los irritantes del suero lácteo.",
+      "tags": [
+        "1 scoop post-entreno",
+        "Sin sucralosa",
+        "Nuzest · Sunwarrior"
+      ]
+    },
+    {
+      "icon": "🔬",
+      "name": "Magnesio Glicinato",
+      "rating": "8.5/10",
+      "rating_fill": 85,
+      "description": "Apoya la recuperación, mejora el sueño y tiene efecto antiinflamatorio. La forma glicinato es la más suave para el estómago; conviene evitar el óxido de magnesio.",
+      "tags": [
+        "200-400mg/noche",
+        "Antes de dormir",
+        "Forma glicinato"
+      ]
+    }
+  ],
+  "preparations": [
+    {
+      "title": "🦴 Caldo de Hueso",
+      "subtitle": "La preparación más terapéutica del plan. Colágeno y gelatina que reparan directamente la mucosa gástrica e intestinal desde adentro.",
+      "sections": [
+        {
+          "title": "Ingredientes",
+          "items": [
+            "1-1.5kg huesos de res con tuétano (o carcasa de pollo)",
+            "2 litros de agua fría",
+            "2 cucharadas de vinagre de manzana (extrae minerales)",
+            "Laurel, perejil, sal mínima"
+          ]
+        },
+        {
+          "title": "",
+          "items": [
+            "Opcional: hornea los huesos 20 min a 200°C para más sabor",
+            "En olla a presión: 3-4 horas. En olla normal: 8-12 horas a fuego muy bajo",
+            "Cuela y refrigera — al día siguiente queda gelatinoso. Eso es exactamente lo que buscas",
+            "Toma 1 taza tibia antes o durante el almuerzo"
+          ]
+        }
+      ],
+      "benefit": "✦ Por qué funciona: el colágeno tipo I y II repara las uniones entre células epiteliales de la mucosa. La gelatina recubre y protege el esófago y el estómago."
+    },
+    {
+      "title": "🌿 Agua de Melisa (Toronjil)",
+      "subtitle": "La infusión nocturna más importante para Barrett. Relaja el esfínter esofágico inferior y reduce el reflujo mientras duermes.",
+      "sections": [
+        {
+          "title": "Ingredientes",
+          "items": [
+            "1 cucharada de hojas secas (o 4-5 hojas frescas) de melisa/toronjil",
+            "1 taza de agua caliente (no hirviendo — máximo 80°C)"
+          ]
+        },
+        {
+          "title": "",
+          "items": [
+            "Calienta el agua, retira antes de que hierva",
+            "Agrega las hojas, tapa y deja reposar 8-10 minutos",
+            "Cuela y toma tibia, 30 min después de cenar",
+            "Consíguela en cualquier naturista como \"toronjil\" o \"melissa officinalis\""
+          ]
+        }
+      ],
+      "benefit": "✦ Por qué funciona: el ácido rosmarínico y los flavonoides de la melisa reducen la inflamación esofágica y tienen efecto espasmolítico sobre el esfínter."
+    },
+    {
+      "title": "🫚 Agua de Jengibre Suave",
+      "subtitle": "Antiinflamatorio gástrico con evidencia sólida. Reduce náuseas, mejora la motilidad gástrica y tiene efecto directo contra H. pylori.",
+      "sections": [
+        {
+          "title": "Ingredientes",
+          "items": [
+            "2-3 rodajas finas de jengibre fresco (no más — en exceso irrita)",
+            "1 taza de agua",
+            "Opcional: pizca de miel"
+          ]
+        },
+        {
+          "title": "",
+          "items": [
+            "Hierve el agua con el jengibre 5 minutos a fuego bajo",
+            "Deja reposar 5 minutos más, cuela",
+            "Toma tibia en el desayuno o entre comidas, no en ayunas",
+            "Máximo 1 taza al día — el jengibre en exceso puede irritar"
+          ]
+        }
+      ],
+      "benefit": "✦ Por qué funciona: el gingerol inhibe la producción de citoquinas proinflamatorias y mejora el vaciamiento gástrico, reduciendo el tiempo que el ácido permanece en contacto con la mucosa."
+    },
+    {
+      "title": "🌼 Infusión de Manzanilla",
+      "subtitle": "La más clásica y subestimada. Antiinflamatoria, antiespasmódica y con efecto cicatrizante sobre la mucosa. Ideal después de comer.",
+      "sections": [
+        {
+          "title": "Ingredientes",
+          "items": [
+            "1 cucharada de flores de manzanilla secas (o 1 bolsita)",
+            "1 taza de agua caliente (no hirviendo)"
+          ]
+        },
+        {
+          "title": "",
+          "items": [
+            "Vierte agua caliente sobre la manzanilla, tapa",
+            "Infusiona 5-7 minutos, cuela",
+            "Toma tibia después del desayuno o almuerzo",
+            "Se puede combinar con melisa para mayor efecto en la noche"
+          ]
+        }
+      ],
+      "benefit": "✦ Por qué funciona: el alfa-bisabolol y la apigenina de la manzanilla tienen efecto antiinflamatorio demostrado sobre la mucosa gástrica y aceleran la cicatrización del epitelio."
+    },
+    {
+      "title": "🥬 Jugo de Repollo Fermentado (Kvass)",
+      "subtitle": "Poco conocido pero muy potente. El repollo contiene vitamina U (metilmetionina) que tiene efecto cicatrizante único sobre las úlceras y la gastritis.",
+      "sections": [
+        {
+          "title": "Ingredientes",
+          "items": [
+            "¼ repollo verde fresco",
+            "Agua filtrada",
+            "Pizca de sal marina sin yodo"
+          ]
+        },
+        {
+          "title": "",
+          "items": [
+            "Licúa el repollo con agua hasta obtener jugo",
+            "Cuela y toma 100ml en ayunas o antes del almuerzo",
+            "Versión fermentada: déjalo a temperatura ambiente 2-3 días tapado con tela — más potente en probióticos",
+            "Empieza con poca cantidad — puede generar gases al inicio"
+          ]
+        }
+      ],
+      "benefit": "✦ Por qué funciona: la vitamina U del repollo acelera la cicatrización de la mucosa. Hay estudios desde los años 50 mostrando reducción de síntomas de gastritis en 7-10 días de uso continuo."
+    },
+    {
+      "title": "🍵 Salsa Cremosa de Yogur Griego con Hierbas",
+      "subtitle": "La salsa base del plan. Proteica, con probióticos y sin irritantes. Para usar en pollo, papa, arroz o como dip de verduras cocidas.",
+      "sections": [
+        {
+          "title": "Ingredientes",
+          "items": [
+            "300g yogur griego sin azúcar 0%",
+            "1 cabeza de ajo asada (no cruda)",
+            "1 cda aceite de oliva + 1 cda miel",
+            "Albahaca, perejil, orégano, pizca de cúrcuma",
+            "Leche de avena para ajustar textura"
+          ]
+        },
+        {
+          "title": "",
+          "items": [
+            "El ajo va asado (35-40 min a 180°C en papel aluminio) — elimina el efecto irritante del crudo",
+            "Mezcla en frío — nunca calientes el yogur griego directamente o se corta y pierde probióticos",
+            "Refrigera 20 min antes de servir para integrar sabores",
+            "Dura hasta 4 días en nevera"
+          ]
+        }
+      ],
+      "benefit": "✦ Por qué funciona: el yogur griego aporta probióticos vivos activos. El ajo asado mantiene sus propiedades antibacterianas sin los irritantes del compuesto alicina en crudo."
+    }
+  ]
+}

@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comer para Sanar — Guía para Gastritis y Salud Digestiva</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --sage: #5C7A5E;
+    --sage-light: #8FA890;
+    --sage-pale: #D6E4D7;
+    --linen: #F0EBE0;
+    --linen-dark: #E4DDD0;
+    --earth: #C4A882;
+    --earth-dark: #9E8460;
+    --white: #FAFAF7;
+    --carbon: #2C2C2C;
+    --carbon-soft: #4A4A4A;
+    --muted: #8A8A8A;
+    --rating-bg: #EEF4EE;
+    --prot: #5C7A5E;
+    --carb: #C4A882;
+    --fat: #B97A56;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--white);
+    color: var(--carbon);
+    line-height: 1.6;
+  }
+
+  /* NAV / TABS */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(250,250,247,0.97);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--linen-dark);
+  }
+  .nav-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    height: 58px;
+  }
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--sage);
+    letter-spacing: -0.02em;
+  }
+  .tabs {
+    display: flex;
+    gap: 0.3rem;
+  }
+  .tab {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--carbon-soft);
+    background: none;
+    border: none;
+    padding: 0.5rem 0.9rem;
+    border-radius: 100px;
+    cursor: pointer;
+    letter-spacing: 0.02em;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+  .tab:hover { background: var(--linen); }
+  .tab.active {
+    background: var(--sage);
+    color: white;
+  }
+
+  /* HERO */
+  .hero {
+    background: var(--linen);
+    padding: 4rem 1.5rem 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 300px; height: 300px;
+    border-radius: 50%;
+    background: var(--sage-pale);
+    opacity: 0.4;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -80px; left: -40px;
+    width: 250px; height: 250px;
+    border-radius: 50%;
+    background: var(--earth);
+    opacity: 0.12;
+  }
+  .hero-inner { position: relative; max-width: 720px; margin: 0 auto; }
+  .hero-eyebrow {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin-bottom: 1.1rem;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--carbon);
+    margin-bottom: 1.3rem;
+    letter-spacing: -0.02em;
+  }
+  .hero h1 em { font-style: italic; color: var(--sage); }
+  .hero-sub {
+    font-size: 1.02rem;
+    color: var(--carbon-soft);
+    max-width: 580px;
+    margin: 0 auto 2rem;
+    line-height: 1.7;
+  }
+  .conditions-tagline {
+    font-size: 0.82rem;
+    color: var(--carbon-soft);
+    margin-bottom: 0.7rem;
+    font-weight: 500;
+  }
+  .conditions-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+  }
+  .condition-chip {
+    background: var(--white);
+    border: 1px solid var(--sage-pale);
+    border-radius: 100px;
+    padding: 0.3rem 0.85rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.35rem;
+  }
+  .condition-chip strong {
+    font-size: 0.72rem;
+    color: var(--sage);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .condition-chip small { display: none; }
+  .hero-disclaimer {
+    font-size: 0.72rem;
+    color: var(--muted);
+    max-width: 460px;
+    margin: 1.5rem auto 0;
+    line-height: 1.6;
+  }
+
+  /* FILTERS */
+  .filter-bar {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .filter-btn {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--carbon-soft);
+    background: var(--white);
+    border: 1.5px solid var(--linen-dark);
+    padding: 0.5rem 1.1rem;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .filter-btn:hover { border-color: var(--sage-light); }
+  .filter-btn.active {
+    background: var(--sage);
+    color: white;
+    border-color: var(--sage);
+  }
+
+  /* PANELS */
+  .panel { display: none; }
+  .panel.active { display: block; }
+
+  /* GRID */
+  .recipe-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.5rem 1.5rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+  }
+  .recipe-card.hidden { display: none; }
+
+  /* RECIPE CARD */
+  .recipe-card {
+    background: var(--white);
+    border: 1px solid var(--linen-dark);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: box-shadow 0.25s, transform 0.25s;
+    cursor: pointer;
+  }
+  .recipe-card:hover {
+    box-shadow: 0 8px 32px rgba(92,122,94,0.12);
+    transform: translateY(-2px);
+  }
+  .card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    background: linear-gradient(135deg, var(--linen), var(--sage-pale));
+  }
+  .card-body { padding: 1.25rem 1.25rem 0; }
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.6rem;
+  }
+  .card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--carbon);
+    flex: 1;
+    padding-right: 1rem;
+  }
+
+  /* RATING */
+  .rating-badge { display: flex; flex-direction: column; align-items: center; flex-shrink: 0; }
+  .rating-bar-wrap {
+    width: 8px; height: 48px;
+    background: var(--linen-dark);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+  }
+  .rating-bar-fill {
+    position: absolute; bottom: 0; width: 100%;
+    border-radius: 4px;
+    background: linear-gradient(to top, var(--sage), var(--sage-light));
+  }
+  .rating-number {
+    font-size: 0.65rem; font-weight: 700;
+    color: var(--sage); margin-top: 4px;
+    letter-spacing: -0.02em;
+  }
+  .card-description {
+    font-size: 0.82rem;
+    color: var(--carbon-soft);
+    line-height: 1.55;
+    margin-bottom: 1rem;
+  }
+
+  /* MACRO DISPLAY */
+  .macros-section {
+    border-top: 1px solid var(--linen-dark);
+    padding: 0.9rem 0 1rem;
+  }
+  .macros-header {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-bottom: 0.6rem;
+  }
+  .macros-cal { font-size: 0.95rem; color: var(--carbon); }
+  .macros-cal strong {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--sage);
+    font-family: 'Playfair Display', serif;
+  }
+  .macros-label {
+    font-size: 0.68rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-left: auto;
+  }
+  .macro-bar {
+    display: flex;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 0.7rem;
+    background: var(--linen);
+  }
+  .macro-bar-seg { height: 100%; transition: width 0.5s; }
+  .macro-prot { background: var(--prot); }
+  .macro-carb { background: var(--carb); }
+  .macro-fat { background: var(--fat); }
+  span.macro-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+  .macros-grid { display: flex; gap: 0.5rem; }
+  .macro-stat {
+    flex: 1;
+    background: var(--linen);
+    border-radius: 8px;
+    padding: 0.5rem 0.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.15rem;
+    text-align: center;
+  }
+  .macro-stat strong { font-size: 0.95rem; font-weight: 700; color: var(--carbon); }
+  .macro-stat small {
+    font-size: 0.62rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .macro-stat .macro-dot { margin-bottom: 0.1rem; }
+
+  /* DETAIL */
+  .card-detail {
+    display: none;
+    padding: 1rem 1.25rem 1.25rem;
+    border-top: 1px solid var(--linen-dark);
+  }
+  .card-detail.open { display: block; }
+  .detail-section-title {
+    font-size: 0.7rem; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--muted); margin-bottom: 0.6rem; margin-top: 1rem;
+  }
+  .detail-section-title:first-child { margin-top: 0; }
+  .ingredients-list { list-style: none; display: flex; flex-direction: column; gap: 0.3rem; }
+  .ingredients-list li {
+    font-size: 0.82rem; color: var(--carbon-soft);
+    display: flex; align-items: baseline; gap: 0.4rem;
+  }
+  .ingredients-list li::before {
+    content: '·'; color: var(--sage); font-size: 1.2rem;
+    line-height: 0; position: relative; top: 3px; flex-shrink: 0;
+  }
+  .steps-list { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; }
+  .step-item { display: flex; gap: 0.75rem; align-items: flex-start; }
+  .step-num {
+    width: 22px; height: 22px;
+    background: var(--sage); color: white;
+    border-radius: 50%; font-size: 0.65rem; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; margin-top: 1px;
+  }
+  .step-text { font-size: 0.82rem; color: var(--carbon-soft); line-height: 1.5; }
+  .timer-btn {
+    display: inline-flex; align-items: center; gap: 0.35rem;
+    margin-top: 0.4rem; background: var(--rating-bg);
+    border: none; border-radius: 6px; padding: 0.25rem 0.6rem;
+    font-size: 0.72rem; font-weight: 600; color: var(--sage); cursor: pointer;
+    transition: background 0.2s;
+  }
+  .timer-btn:hover { background: var(--sage-pale); }
+  .timer-btn.running { background: var(--sage); color: white; }
+  .servings-control { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .servings-label { font-size: 0.75rem; color: var(--muted); font-weight: 500; }
+  .servings-btn {
+    width: 26px; height: 26px;
+    border: 1.5px solid var(--sage-pale); background: white;
+    border-radius: 50%; font-size: 1rem; color: var(--sage); cursor: pointer;
+    display: flex; align-items: center; justify-content: center; font-weight: 600;
+    transition: background 0.15s, border-color 0.15s;
+  }
+  .servings-btn:hover { background: var(--sage-pale); border-color: var(--sage); }
+  .servings-count { font-size: 0.9rem; font-weight: 700; color: var(--carbon); min-width: 20px; text-align: center; }
+  .recipe-note {
+    background: var(--linen); border-left: 3px solid var(--earth);
+    border-radius: 0 8px 8px 0; padding: 0.7rem 0.9rem;
+    font-size: 0.78rem; color: var(--carbon-soft); line-height: 1.55; margin-top: 0.5rem;
+  }
+  .card-toggle {
+    display: flex; align-items: center; justify-content: center; gap: 0.4rem;
+    padding: 0.75rem; font-size: 0.75rem; font-weight: 600; color: var(--sage);
+    cursor: pointer; border-top: 1px solid var(--linen-dark);
+    letter-spacing: 0.04em; transition: background 0.15s;
+  }
+  .card-toggle:hover { background: var(--linen); }
+  .toggle-arrow { transition: transform 0.2s; font-size: 0.65rem; }
+  .card-toggle.open .toggle-arrow { transform: rotate(180deg); }
+
+  /* SECTION HEADER */
+  .panel-intro {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 0;
+  }
+  .panel-intro h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+  }
+  .panel-intro p { font-size: 0.9rem; color: var(--carbon-soft); max-width: 600px; }
+
+  /* SUPPLEMENT */
+  .supplement-grid, .prep-grid {
+    max-width: 1100px; margin: 0 auto;
+    padding: 1.5rem 1.5rem 3rem;
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;
+  }
+  .supplement-card {
+    background: var(--white); border: 1px solid var(--linen-dark);
+    border-radius: 16px; padding: 1.5rem; display: flex; gap: 1rem;
+    align-items: flex-start; transition: box-shadow 0.2s;
+  }
+  .supplement-card:hover { box-shadow: 0 4px 20px rgba(92,122,94,0.1); }
+  .supplement-icon {
+    font-size: 2rem; flex-shrink: 0; width: 52px; height: 52px;
+    background: var(--linen); border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .supplement-body { flex: 1; }
+  .supplement-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem; font-weight: 600; margin-bottom: 0.3rem;
+  }
+  .supplement-desc { font-size: 0.8rem; color: var(--carbon-soft); line-height: 1.55; margin-bottom: 0.6rem; }
+  .supplement-meta { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+  .meta-tag {
+    background: var(--linen); color: var(--carbon-soft);
+    font-size: 0.68rem; font-weight: 600; padding: 0.2rem 0.55rem; border-radius: 4px;
+  }
+
+  /* PREP */
+  .prep-card { background: var(--white); border: 1px solid var(--linen-dark); border-radius: 16px; overflow: hidden; }
+  .prep-header { background: linear-gradient(135deg, var(--sage) 0%, var(--sage-light) 100%); padding: 1.5rem; color: white; }
+  .prep-header h3 { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 600; margin-bottom: 0.3rem; }
+  .prep-header p { font-size: 0.78rem; opacity: 0.85; line-height: 1.5; }
+  .prep-body { padding: 1.25rem; }
+  .prep-body ul { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1rem; }
+  .prep-body ul li { font-size: 0.82rem; color: var(--carbon-soft); padding-left: 1rem; position: relative; }
+  .prep-body ul li::before { content: '→'; position: absolute; left: 0; color: var(--sage); font-size: 0.75rem; }
+  .prep-benefit {
+    background: var(--rating-bg); border-radius: 8px; padding: 0.6rem 0.8rem;
+    font-size: 0.78rem; color: var(--sage); font-weight: 500;
+  }
+
+  footer {
+    background: var(--carbon); color: rgba(255,255,255,0.5);
+    text-align: center; padding: 2.5rem 1rem; font-size: 0.75rem;
+    line-height: 1.7; margin-top: 2rem;
+  }
+  footer strong { color: rgba(255,255,255,0.8); }
+
+  @media (max-width: 760px) {
+    .nav-inner { flex-direction: column; height: auto; padding: 0.6rem 1rem; gap: 0.5rem; }
+    .tabs { width: 100%; overflow-x: auto; justify-content: flex-start; }
+    .hero { padding: 2.5rem 1.25rem 2rem; }
+    .recipe-grid, .supplement-grid, .prep-grid { padding: 1.25rem; gap: 1rem; }
+    .filter-bar { padding: 1.5rem 1.25rem 0; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">Comer para Sanar</div>
+    <div class="tabs">
+      <button class="tab active" onclick="showTab('alimentacion', this)">Alimentación</button>
+      <button class="tab" onclick="showTab('suplementacion', this)">Suplementación</button>
+      <button class="tab" onclick="showTab('preparaciones', this)">Preparaciones</button>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">De adentro hacia afuera</p>
+    <h1>Comer rico, <em>sentirte bien</em></h1>
+    <p class="hero-sub">
+      Comida real, sabrosa y reconfortante — que además es suave con tu estómago. Recetas modernas que dan ganas de cocinar, pensadas para disfrutar sin pesadez. Cada una con su calificación, macros y porciones ajustables.
+    </p>
+    <div class="conditions-tagline">Comida que disfruta cualquiera — y que de paso ayuda con:</div>
+    <div class="conditions-row" id="conditions-row"></div>
+    <p class="hero-disclaimer">
+      Esta guía no reemplaza a tu médico tratante. Úsala como complemento informado a tu seguimiento con gastroenterólogo y nutricionista.
+    </p>
+  </div>
+</section>
+
+<!-- TAB: ALIMENTACION -->
+<div id="alimentacion" class="panel active">
+  <div class="filter-bar">
+    <button class="filter-btn active" onclick="filterFood('todos', this)">Todos</button>
+    <button class="filter-btn" onclick="filterFood('desayunos', this)">🌅 Desayunos</button>
+    <button class="filter-btn" onclick="filterFood('almuerzos', this)">☀️ Almuerzos</button>
+    <button class="filter-btn" onclick="filterFood('cenas', this)">🌙 Cenas</button>
+    <button class="filter-btn" onclick="filterFood('snacks', this)">🍎 Snacks</button>
+  </div>
+  <div class="recipe-grid" id="food-grid"></div>
+</div>
+
+<!-- TAB: SUPLEMENTACION -->
+<div id="suplementacion" class="panel">
+  <div class="panel-intro">
+    <h2>Suplementación</h2>
+    <p>Solo lo que tiene sentido para casos de gastritis, Barrett y H. pylori. Cada suplemento con su calificación y justificación.</p>
+  </div>
+  <div class="supplement-grid" id="supplement-grid"></div>
+</div>
+
+<!-- TAB: PREPARACIONES -->
+<div id="preparaciones" class="panel">
+  <div class="panel-intro">
+    <h2>Preparaciones Especiales</h2>
+    <p>Caldos y tés terapéuticos que la mayoría no consume, pero que ayudan a calmar y reparar la mucosa. Con su explicación de por qué funcionan.</p>
+  </div>
+  <div class="prep-grid" id="prep-grid"></div>
+</div>
+
+<footer>
+  <p><strong>Comer para Sanar</strong> — Guía de alimentación para la salud digestiva</p>
+  <p style="margin-top:0.5rem">Esta guía no reemplaza el diagnóstico ni el tratamiento médico. Úsala como complemento informado a tu seguimiento con gastroenterólogo y nutricionista.</p>
+</footer>
+
+<script>
+  // ─── TAB / FILTER NAVIGATION ────────────────────────────────────────────────
+
+  function showTab(id, btn) {
+    document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    btn.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function filterFood(cat, btn) {
+    document.querySelectorAll('.filter-bar .filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('#food-grid .recipe-card').forEach(card => {
+      card.classList.toggle('hidden', cat !== 'todos' && card.dataset.cat !== cat);
+    });
+  }
+
+  function toggleCard(card) {
+    const detail = card.querySelector('.card-detail');
+    const toggle = card.querySelector('.card-toggle');
+    if (!detail) return;
+    const isOpen = detail.classList.contains('open');
+    detail.classList.toggle('open', !isOpen);
+    toggle.classList.toggle('open', !isOpen);
+    toggle.innerHTML = isOpen
+      ? 'Ver receta <span class="toggle-arrow">▼</span>'
+      : 'Cerrar <span class="toggle-arrow">▲</span>';
+  }
+
+  function changeServings(e, btn, delta) {
+    e.stopPropagation();
+    const control = btn.closest('.servings-control');
+    const countEl = control.querySelector('.servings-count');
+    let current = parseInt(countEl.textContent);
+    const next = Math.max(1, current + delta);
+    if (next === current) return;
+    countEl.textContent = next;
+    btn.closest('.card-detail').querySelectorAll('.ing-base').forEach(el => {
+      const scaled = parseFloat(el.dataset.base) * next;
+      el.textContent = Number.isInteger(scaled) ? scaled : scaled.toFixed(1);
+    });
+  }
+
+  function startTimer(e, btn, totalSeconds) {
+    e.stopPropagation();
+    if (btn.dataset.running === 'true') {
+      clearInterval(btn._interval);
+      btn.dataset.running = 'false';
+      btn.classList.remove('running');
+      btn.textContent = `⏱ ${formatTime(totalSeconds)}`;
+      return;
+    }
+    btn.dataset.running = 'true';
+    btn.classList.add('running');
+    let remaining = totalSeconds;
+    btn.textContent = `⏹ ${formatTime(remaining)}`;
+    btn._interval = setInterval(() => {
+      remaining--;
+      if (remaining <= 0) {
+        clearInterval(btn._interval);
+        btn.dataset.running = 'false';
+        btn.classList.remove('running');
+        btn.textContent = '✅ Listo!';
+        if (Notification.permission === 'granted') {
+          new Notification('¡Listo!', { body: 'Tu preparación terminó.' });
+        }
+      } else {
+        btn.textContent = `⏹ ${formatTime(remaining)}`;
+      }
+    }, 1000);
+  }
+
+  function formatTime(s) {
+    const m = Math.floor(s / 60);
+    const sec = s % 60;
+    return `${m}:${sec.toString().padStart(2, '0')}`;
+  }
+
+  if ('Notification' in window && Notification.permission === 'default') {
+    Notification.requestPermission();
+  }
+
+  // ─── RENDER HELPERS ──────────────────────────────────────────────────────────
+
+  function macroPercents(m) {
+    const p = m.protein * 4, c = m.carbs * 4, f = m.fat * 9;
+    const total = p + c + f;
+    if (!total) return { p: 33, c: 34, f: 33 };
+    return {
+      p: Math.round(p / total * 100),
+      c: Math.round(c / total * 100),
+      f: Math.round(f / total * 100)
+    };
+  }
+
+  function ratingBadge(rating, fill) {
+    return `<div class="rating-badge">
+      <div class="rating-bar-wrap"><div class="rating-bar-fill" style="height:${fill}%"></div></div>
+      <div class="rating-number">${rating}</div>
+    </div>`;
+  }
+
+  // ─── RECIPES ─────────────────────────────────────────────────────────────────
+
+  function renderRecipes(recipes) {
+    const grid = document.getElementById('food-grid');
+    recipes.forEach(r => {
+      const pct = macroPercents(r.macros);
+
+      const ingredientsHTML = r.ingredients.length
+        ? `<div class="detail-section-title">Ingredientes</div>
+           <ul class="ingredients-list">${r.ingredients.map(i => `<li>${i}</li>`).join('')}</ul>`
+        : '';
+
+      const stepsHTML = r.steps.length
+        ? `<div class="detail-section-title" style="margin-top:1rem">Preparación</div>
+           <ul class="steps-list">${r.steps.map((s, i) => {
+             const timerBtn = s.timer_seconds
+               ? `<br><button class="timer-btn" onclick="startTimer(event,this,${s.timer_seconds})" data-seconds="${s.timer_seconds}">⏱ ${formatTime(s.timer_seconds)}</button>`
+               : '';
+             return `<li class="step-item"><div class="step-num">${i + 1}</div><div class="step-text">${s.text}${timerBtn}</div></li>`;
+           }).join('')}</ul>`
+        : '';
+
+      const noteHTML = r.note ? `<div class="recipe-note">${r.note}</div>` : '';
+
+      const card = document.createElement('div');
+      card.className = 'recipe-card';
+      card.dataset.cat = r.category;
+      card.onclick = () => toggleCard(card);
+      card.innerHTML = `
+        <img class="card-image" src="${r.image}" alt="${r.title}"
+          onerror="this.onerror=null;this.style.background='linear-gradient(135deg,var(--linen),var(--sage-pale))';this.removeAttribute('src')" />
+        <div class="card-body">
+          <div class="card-top">
+            <div class="card-title">${r.title}</div>
+            ${ratingBadge(r.rating, r.rating_fill)}
+          </div>
+          <p class="card-description">${r.description}</p>
+          <div class="macros-section">
+            <div class="macros-header">
+              <span class="macros-cal"><strong>${r.macros.calories}</strong> kcal</span>
+              <span class="macros-label">por porción</span>
+            </div>
+            <div class="macro-bar">
+              <div class="macro-bar-seg macro-prot" style="width:${pct.p}%"></div>
+              <div class="macro-bar-seg macro-carb" style="width:${pct.c}%"></div>
+              <div class="macro-bar-seg macro-fat" style="width:${pct.f}%"></div>
+            </div>
+            <div class="macros-grid">
+              <div class="macro-stat"><span class="macro-dot macro-prot"></span><strong>${r.macros.protein}g</strong><small>Proteína</small></div>
+              <div class="macro-stat"><span class="macro-dot macro-carb"></span><strong>${r.macros.carbs}g</strong><small>Carbs</small></div>
+              <div class="macro-stat"><span class="macro-dot macro-fat"></span><strong>${r.macros.fat}g</strong><small>Grasa</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="card-toggle">Ver receta <span class="toggle-arrow">▼</span></div>
+        <div class="card-detail">
+          <div class="servings-control">
+            <span class="servings-label">Porciones</span>
+            <button class="servings-btn" onclick="changeServings(event,this,-1)">−</button>
+            <span class="servings-count">1</span>
+            <button class="servings-btn" onclick="changeServings(event,this,1)">+</button>
+          </div>
+          ${ingredientsHTML}
+          ${stepsHTML}
+          ${noteHTML}
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+  }
+
+  // ─── SUPPLEMENTS ─────────────────────────────────────────────────────────────
+
+  function renderSupplements(supplements) {
+    const grid = document.getElementById('supplement-grid');
+    supplements.forEach(s => {
+      const tagsHTML = s.tags.map(t => `<span class="meta-tag">${t}</span>`).join('');
+      const card = document.createElement('div');
+      card.className = 'supplement-card';
+      card.innerHTML = `
+        <div class="supplement-icon">${s.icon}</div>
+        <div class="supplement-body">
+          <div class="card-top" style="margin-bottom:0.3rem">
+            <div class="supplement-name">${s.name}</div>
+            ${ratingBadge(s.rating, s.rating_fill)}
+          </div>
+          <p class="supplement-desc">${s.description}</p>
+          <div class="supplement-meta">${tagsHTML}</div>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+  }
+
+  // ─── PREPARATIONS ────────────────────────────────────────────────────────────
+
+  function renderPreparations(preparations) {
+    const grid = document.getElementById('prep-grid');
+    preparations.forEach(p => {
+      const sectionsHTML = p.sections.map(sec => `
+        ${sec.title ? `<div class="detail-section-title">${sec.title}</div>` : `<div class="detail-section-title" style="margin-top:1rem">Preparación</div>`}
+        <ul>${sec.items.map(item => `<li>${item}</li>`).join('')}</ul>
+      `).join('');
+
+      const card = document.createElement('div');
+      card.className = 'prep-card';
+      card.innerHTML = `
+        <div class="prep-header">
+          <h3>${p.title}</h3>
+          <p>${p.subtitle}</p>
+        </div>
+        <div class="prep-body">
+          ${sectionsHTML}
+          <div class="prep-benefit">${p.benefit}</div>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+  }
+
+  // ─── CONDITIONS ROW ──────────────────────────────────────────────────────────
+
+  function renderConditions(conditions) {
+    const row = document.getElementById('conditions-row');
+    conditions.forEach(c => {
+      const chip = document.createElement('div');
+      chip.className = 'condition-chip';
+      chip.innerHTML = `<strong>${c}</strong>`;
+      row.appendChild(chip);
+    });
+  }
+
+  // ─── INIT ────────────────────────────────────────────────────────────────────
+
+  fetch('datos.json')
+    .then(r => r.json())
+    .then(data => {
+      renderConditions(data.meta.conditions);
+      renderRecipes(data.recipes);
+      renderSupplements(data.supplements);
+      renderPreparations(data.preparations);
+    })
+    .catch(err => {
+      console.error('Error cargando datos.json:', err);
+      document.getElementById('food-grid').innerHTML =
+        '<p style="padding:2rem;color:var(--muted)">Error cargando las recetas. Abre el archivo desde un servidor local o GitHub Pages.</p>';
+    });
+</script>
+</body>
+</html>

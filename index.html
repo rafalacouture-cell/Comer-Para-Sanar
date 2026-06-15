@@ -479,6 +479,126 @@
     .hero { padding: 2.5rem 1.25rem 2rem; }
     .recipe-grid, .supplement-grid, .prep-grid { padding: 1.25rem; gap: 1rem; }
     .filter-bar { padding: 1.5rem 1.25rem 0; }
+    .intro-page { padding: 2rem 1.25rem 3rem; }
+    .intro-conditions-grid, .intro-how-grid { grid-template-columns: 1fr 1fr; }
+  }
+
+  /* ── INTRO PAGE ─────────────────────────────────────────────────────────── */
+  .intro-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 4rem;
+  }
+  .intro-hero {
+    text-align: center;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--linen-dark);
+    margin-bottom: 3rem;
+  }
+  .intro-hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    color: var(--carbon);
+    line-height: 1.2;
+    margin-bottom: 1.25rem;
+  }
+  .intro-hero h2 em { color: var(--sage); font-style: italic; }
+  .intro-lead {
+    font-size: 1.05rem;
+    color: var(--carbon-soft);
+    max-width: 640px;
+    margin: 0 auto 1rem;
+    line-height: 1.7;
+  }
+  .intro-section { margin-bottom: 3rem; }
+  .intro-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--carbon);
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .eli5-badge {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    background: var(--sage);
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 100px;
+    letter-spacing: 0.05em;
+  }
+  .intro-conditions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    gap: 1rem;
+  }
+  .intro-condition-card {
+    background: var(--linen);
+    border-radius: 12px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .intro-condition-card .intro-icon { font-size: 1.4rem; }
+  .intro-condition-card strong { font-size: 0.88rem; color: var(--carbon); }
+  .intro-condition-card p { font-size: 0.8rem; color: var(--carbon-soft); line-height: 1.5; margin: 0; }
+  .intro-eli5-lead { color: var(--muted); font-size: 0.9rem; margin-bottom: 1.5rem; font-style: italic; }
+  .eli5-steps { display: flex; flex-direction: column; gap: 1.25rem; }
+  .eli5-step {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    background: var(--white);
+    border: 1px solid var(--linen-dark);
+    border-radius: 12px;
+    padding: 1.25rem;
+  }
+  .eli5-num {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--sage);
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .eli5-step strong { display: block; font-size: 0.95rem; color: var(--carbon); margin-bottom: 0.4rem; }
+  .eli5-step p { font-size: 0.85rem; color: var(--carbon-soft); line-height: 1.6; margin: 0; }
+  .intro-how-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .intro-how-card {
+    background: var(--linen);
+    border-radius: 12px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .intro-how-card .intro-icon { font-size: 1.5rem; }
+  .intro-how-card strong { font-size: 0.9rem; color: var(--carbon); }
+  .intro-how-card p { font-size: 0.82rem; color: var(--carbon-soft); line-height: 1.5; margin: 0; }
+  .intro-disclaimer-note {
+    font-size: 0.78rem;
+    color: var(--muted);
+    font-style: italic;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid var(--linen-dark);
+    border-radius: 8px;
   }
 </style>
 </head>
@@ -488,7 +608,8 @@
   <div class="nav-inner">
     <div class="nav-logo">Comer para Sanar</div>
     <div class="tabs">
-      <button class="tab active" onclick="showTab('alimentacion', this)">Alimentación</button>
+      <button class="tab active" onclick="showTab('inicio', this)">Inicio</button>
+      <button class="tab" onclick="showTab('alimentacion', this)">Alimentación</button>
       <button class="tab" onclick="showTab('suplementacion', this)">Suplementación</button>
       <button class="tab" onclick="showTab('preparaciones', this)">Preparaciones</button>
     </div>
@@ -510,14 +631,119 @@
   </div>
 </section>
 
+<!-- TAB: INICIO -->
+<div id="inicio" class="panel active">
+  <div class="intro-page">
+
+    <section class="intro-hero">
+      <h2>Cuidar tu estómago<br><em>puede ser delicioso</em></h2>
+      <p class="intro-lead">Esta guía nació de una idea simple: que comer para sanar la gastritis no tiene que ser aburrido, restrictivo ni sentirse como comida de enfermo. Aquí encontrarás recetas modernas, reconfortantes y con sabor real — que de paso son suaves con tu mucosa, apoyan la regeneración de la pared gástrica y ayudan a controlar el H. pylori.</p>
+      <p class="intro-lead">No es una dieta. Es una forma de comer que disfrutas y que además te cuida por dentro.</p>
+    </section>
+
+    <section class="intro-section">
+      <h3>¿Para quién es esto?</h3>
+      <div class="intro-conditions-grid">
+        <div class="intro-condition-card">
+          <span class="intro-icon">🔥</span>
+          <strong>Gastritis crónica</strong>
+          <p>Inflamación persistente de la mucosa. La alimentación correcta reduce la irritación y permite que sane.</p>
+        </div>
+        <div class="intro-condition-card">
+          <span class="intro-icon">🧫</span>
+          <strong>H. pylori</strong>
+          <p>Bacteria que daña la mucosa. Ciertos alimentos (brócoli, arándanos) ayudan a inhibir su adherencia.</p>
+        </div>
+        <div class="intro-condition-card">
+          <span class="intro-icon">↑</span>
+          <strong>Esófago de Barrett</strong>
+          <p>El reflujo crónico daña el esófago. Evitar irritantes y cenas ligeras es clave para protegerlo.</p>
+        </div>
+        <div class="intro-condition-card">
+          <span class="intro-icon">🔬</span>
+          <strong>Atrofia gástrica y metaplasia</strong>
+          <p>La mucosa pierde células normales. Nutrientes específicos apoyan su regeneración lenta pero real.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-section intro-eli5">
+      <h3>¿Cómo se genera la gastritis? <span class="eli5-badge">ELI5</span></h3>
+      <p class="intro-eli5-lead">Explicado como si tuvieras 5 años (pero con respeto):</p>
+
+      <div class="eli5-steps">
+        <div class="eli5-step">
+          <div class="eli5-num">1</div>
+          <div>
+            <strong>El estómago es como una piscina con azulejos</strong>
+            <p>Las paredes del estómago tienen una capa especial — la mucosa — que actúa como azulejos que protegen el concreto de abajo del agua ácida. El ácido está ahí para digerir la comida, pero no debe tocar las paredes directamente.</p>
+          </div>
+        </div>
+        <div class="eli5-step">
+          <div class="eli5-num">2</div>
+          <div>
+            <strong>La gastritis es cuando los azulejos se dañan</strong>
+            <p>Cuando comes cosas irritantes (picante, frituras, alcohol), tomas ciertos medicamentos (ibuprofeno, aspirina) o tienes mucho estrés, los azulejos se agrietan o caen. El ácido empieza a tocar la pared directamente → inflamación → dolor, acidez, náuseas.</p>
+          </div>
+        </div>
+        <div class="eli5-step">
+          <div class="eli5-num">3</div>
+          <div>
+            <strong>El H. pylori es una bacteria que "come" los azulejos</strong>
+            <p>Esta bacteria vive en el estómago y produce enzimas que disuelven la capa protectora. Con el tiempo puede crear úlceras (huecos en la pared) y, si no se trata, asociarse a cambios más serios en las células.</p>
+          </div>
+        </div>
+        <div class="eli5-step">
+          <div class="eli5-num">4</div>
+          <div>
+            <strong>Atrofia y metaplasia: cuando el daño se vuelve estructural</strong>
+            <p>Si la inflamación dura años, las células que producen ácido y moco pueden desaparecer (atrofia gástrica) o transformarse en otro tipo de célula (metaplasia intestinal). Es una señal de alarma que requiere seguimiento médico, pero no significa que no se pueda manejar bien.</p>
+          </div>
+        </div>
+        <div class="eli5-step">
+          <div class="eli5-num">5</div>
+          <div>
+            <strong>Los azulejos sí se pueden reparar</strong>
+            <p>La mucosa tiene capacidad de regenerarse. Con alimentación antiinflamatoria, sin irritantes, con proteína limpia y los suplementos correctos, el proceso de reparación es real. No ocurre de un día para otro, pero con consistencia se siente la diferencia.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-section">
+      <h3>Cómo usar esta guía</h3>
+      <div class="intro-how-grid">
+        <div class="intro-how-card">
+          <span class="intro-icon">🥗</span>
+          <strong>Alimentación</strong>
+          <p>28 recetas organizadas por momento del día. Cada una con macros, ingredientes, pasos y calificación de qué tan suave es para tu estómago.</p>
+        </div>
+        <div class="intro-how-card">
+          <span class="intro-icon">💊</span>
+          <strong>Suplementación</strong>
+          <p>Los suplementos con evidencia real para gastritis y H. pylori. Con justificación científica y dosis orientativas.</p>
+        </div>
+        <div class="intro-how-card">
+          <span class="intro-icon">🫖</span>
+          <strong>Preparaciones</strong>
+          <p>Caldos y tés terapéuticos que la mayoría no consume, pero que ayudan a calmar y reparar la mucosa desde adentro.</p>
+        </div>
+      </div>
+      <p class="intro-disclaimer-note">Esta guía es un complemento informado — no reemplaza a tu gastroenterólogo ni nutricionista. Ante síntomas persistentes, consulta siempre a un médico.</p>
+    </section>
+
+  </div>
+</div>
+
 <!-- TAB: ALIMENTACION -->
-<div id="alimentacion" class="panel active">
+<div id="alimentacion" class="panel">
   <div class="filter-bar">
     <button class="filter-btn active" onclick="filterFood('todos', this)">Todos</button>
     <button class="filter-btn" onclick="filterFood('desayunos', this)">🌅 Desayunos</button>
     <button class="filter-btn" onclick="filterFood('almuerzos', this)">☀️ Almuerzos</button>
     <button class="filter-btn" onclick="filterFood('cenas', this)">🌙 Cenas</button>
     <button class="filter-btn" onclick="filterFood('snacks', this)">🍎 Snacks</button>
+    <button class="filter-btn" onclick="filterFood('frutas', this)">🍓 Frutas</button>
   </div>
   <div class="recipe-grid" id="food-grid"></div>
 </div>
